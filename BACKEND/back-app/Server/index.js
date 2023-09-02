@@ -6,7 +6,7 @@ const { graphqlHTTP } = require("express-graphql");
 const schema = require("./Schema/schema")
 const PORT = process.env.PORT || 5000;
 
-
+// Call to the function to connect to the data base
 connectDB()
 
 app.use("/graphql", graphqlHTTP({
